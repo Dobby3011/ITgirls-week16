@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url('https://phonoteka.org/uploads/posts/2021-04/1618658742_34-phonoteka_org-p-fon-dlya-vizitnoi-kartochki-40.jpg') no-repeat center center;
+    min-height: 100%;
+    background-size: cover;
+
+}
+
+.box {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+
+input {
+    width: 18.75rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-self: center;
+    border-radius: 10px;
+
+}
+
+input:hover,
+input:focus {
+    border: 2px solid rgb(12, 96, 175);
+    outline: rgb(55, 12, 175);
+}
+
+input.focus::placeholder {
+    color: transparent;
+}
+
+.form__input:invalid,
+#pinOne:invalid,
+#pinTwo:invalid {
+    border: 1px solid red;
+}
+
+.form__input:valid,
+#pinOne:valid,
+#pinTwo:valid {
+    border: 1px solid rgba(130, 159, 168, 0.836);
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+.form__select {
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(61, 12, 175);
+    border: none;
+    border-radius: 10px;
+    height: 2rem;
+}
+
+.form__submit {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(61, 12, 175);
+    border: none;
+    border-radius: 10px;
+}
+
+.error-message {
+    font-size: 1.5rem;
+    color: red;
+}

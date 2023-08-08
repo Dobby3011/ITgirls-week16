@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    sr
+</head>
+
+<body>
+    <div class="box">
+        <h1>Регистрация</h1>
+        <form name="form" class="form" novalidate>
+            <label for="name" class="form__label">Имя:</label>
+            <input type="text" id="name" name="name" class="form__input" placeholder="Ваше имя" required minlength="2"
+                maxlength="20" />
+            <br />
+
+            <label for="email" class="form__label">Email:</label>
+            <input type="email" id="email" name="email" class="form__input" placeholder="Ваш email" required />
+            <br />
+            <label for="age" class="form__label">Возраст:</label>
+            <input type="number" id="age" name="age" class="form__input" placeholder="Ваш возраст" minlength="1"
+                maxlength="2" required />
+            <br />
+            <label class="form__label">Выберите пол:</label> <br>
+            <input type="radio" class="gender" name="gender" value="male"> Mужской<br>
+            <input type="radio" class="gender" name="gender" value="female"> Женский<br>
+
+            <label for="select" class="form__label">Выберите профессию:</label>
+            <select id="select" name="select" class="form__select">
+                <option value="Опция 1">Программист</option>
+                <option value="Опция 2">Учитель</option>
+                <option value="Опция 3">Продавец</option>
+                <option value="Опция 4">Швея</option>
+                <option value="Опция 5">Госслужащий</option>
+                <option value="Опция 6">Другое</option>
+            </select>
+            <br>
+            <label for="pinOne">Придумайте пароль:</label>
+            <input id="pinOne" name="pinOne" type="password" inputmode="numeric" minlength="8" maxlength="12" required
+                pattern=".{8,}" title="Минимум 8 символов" />
+            <br>
+            <label for="pinTwo">Повторите пароль:</label>
+            <input id="pinTwo" name="pinTwo" type="password" inputmode="numeric" minlength="8" maxlength="12" required
+                pattern=".{8,}" title="Минимум 8 символов" />
+            <br>
+            <input type="checkbox" required> Нажимая кнопку "Отправить" Вы даёте свое согласие на обработку введенной
+            персональной информации в соответствии с Федеральным Законом №152-ФЗ от 27.07.2006 "О персональных данных"
+            <br>
+            <button type="submit" name="button" class="form__submit">Отправить</button>
+            <p class="error-message" id="errorMessage"></p>
+        </form>
+    </div>
+
+    <script src="index16.js"></script>
+
+</body>
+
+</html>
